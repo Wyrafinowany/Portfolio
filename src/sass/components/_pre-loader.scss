@@ -1,0 +1,38 @@
+.loading-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: #2D3436;
+
+    .counter {
+        text-align: center;
+
+        h1,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-size: 40px;
+            font-weight: 100;
+            color: #FDCB6E;
+        }
+
+        h1 {
+            color: white;
+            font-size: 60px;
+            margin-top: -5px;
+        }
+
+        hr {
+            background: #FDCB6E;
+            border: none;
+            height: 1px;
+        }
+    }
+}

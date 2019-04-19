@@ -1,0 +1,20 @@
+.projects {
+    background-color: #171717;
+
+    .black-top {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 80vw 10vh 0;
+        border-color: transparent #000 transparent transparent;
+    }
+
+    .black-bottom {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 80vw 10vh 0;
+        border-color: transparent transparent #000 transparent;
+        bottom: 0;
+    }
+}

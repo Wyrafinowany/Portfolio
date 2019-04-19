@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm-run-all build:* ",
+    "build:sass": "node-sass --output-style compact -o css sass",
+    // "build:autoprefixer": "autoprefixer-cli css/style.css",
+    "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
+        "watch": "npm-run-all build -p watch:*",
+    "watch:sassprefixer": "onchange sass/ -- npm-run-all -s build-dev:sass build:autoprefixer"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "sass": "^1.18.0"
+  }
+}
