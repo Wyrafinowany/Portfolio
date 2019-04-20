@@ -35,10 +35,23 @@ window.addEventListener('scroll', (e) => {
   const scrollTop = window.scrollY;
 
   if (scrollTop > previousScrollTop) {
-    navigation.style.top = '-3rem';
+    navigation.style.top = '-5rem';
   } else {
     navigation.style.top = '0';
   }
 
   previousScrollTop = scrollTop;
+});
+
+//      Hamburger menu
+//Disable menu after click on <a>
+$('.toggle-menu a').on('click', function (e) {
+  $('.toggle').toggleClass('toggle-active');
+});
+//Active/disable hamburger menu
+$('.navicon').on('click', function (e) {
+  e.preventDefault();
+
+  $(this).toggleClass('navicon-active');
+  $('.toggle').toggleClass('toggle-active');
 });

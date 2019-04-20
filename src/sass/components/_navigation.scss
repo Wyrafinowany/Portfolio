@@ -1,7 +1,5 @@
 nav {
-    background-color: transparent;
     position: fixed;
-    top: 0;
     left: 0;
     right: 0;
     z-index: 3;
@@ -12,15 +10,10 @@ nav {
         display: flex;
         justify-content: center;
 
-
-
         .navbar-list {
-
             display: flex;
             justify-content: space-around;
-
             min-width: 50vw;
-            margin: 10px 0;
 
             .navbar-item {
                 list-style: none;
@@ -37,20 +30,18 @@ nav {
                 text-transform: uppercase;
                 letter-spacing: 1px;
                 font-weight: 400;
-                text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
-                font-size: 0.5em;
+                font-size: 1.2rem;
                 padding: 5px 0;
                 border-bottom: 1px solid #FDCB6E;
-                text-shadow: none;
-                color: #dfe6e9;
+                color: #fff;
 
                 &::before {
                     position: absolute;
                     top: 0;
                     left: 0;
-                    overflow: hidden;
-                    padding: 5px 0;
                     max-width: 0;
+                    padding: 5px 0;
+                    overflow: hidden;
                     border-bottom: 1px solid #dfe6e9;
                     color: #FDCB6E;
                     content: attr(data-hover);
@@ -65,8 +56,129 @@ nav {
                     max-width: 100%;
 
                 }
+            }
+        }
+    }
+}
 
-                .link-text {}
+//Disable hambuger menu
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 992px) {
+
+    //Disable navigation
+    nav {
+        display: none;
+    }
+
+    //Active hamburger menu
+    .hamburger-menu {
+        position: fixed;
+        display: block;
+        max-height: 0;
+
+        .navicon {
+            height: 80px;
+            position: relative;
+            display: block;
+            z-index: 99;
+            transition: linear 0.5s all;
+            outline: none;
+
+            &:before,
+            &:after {
+                width: 45px;
+                height: 3px;
+                position: absolute;
+                margin: 20px 0 0 20px;
+                background: #fff;
+                content: "";
+                transition: 0.8s ease;
+            }
+
+            &:before {
+                box-shadow: #fff 0 14px 0 0;
+                top: 0;
+            }
+
+            &:after {
+                top: 28px;
+            }
+
+            //Active hamburger icon "X"
+            &-active {
+                margin-bottom: 12%;
+                transition: linear 0.5s all;
+
+                &:before,
+                &:after {
+                    top: 15px;
+                    background-color: #FDCB6E;
+                }
+
+                &:before {
+                    box-shadow: transparent 0 0 0 0;
+                    transform: rotate(225deg);
+                }
+
+                &:after {
+                    transform: rotate(315deg);
+                }
+            }
+        }
+
+        .toggle {
+            min-width: 80vw;
+            z-index: 98;
+            display: block;
+            background-color: rgba(23, 23, 23, 0.9);
+            padding: 10%;
+            opacity: 0;
+            transition: ease-in 0.5s all;
+            transform: translateY(-200%);
+
+            &-active {
+                margin-top: 25px;
+                opacity: 1;
+                transition: ease-in 0.5s all;
+                transform: translateY(0);
+            }
+
+            &-menu {
+                padding: 0;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        padding: 15px 0;
+                        color: #fff;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+
+            li {
+                margin: 15px;
+                list-style: none;
+
+                a {
+                    color: #FDCB6E;
+                    font-size: 3rem;
+                    text-shadow: 0px 1px 1px #000;
+                }
             }
         }
     }
