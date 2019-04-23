@@ -1,20 +1,32 @@
 .projects {
     background-color: #171717;
+    text-align: center;
 
     .black-top {
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 0 80vw 10vh 0;
-        border-color: transparent #000 transparent transparent;
+        border-width: 10vh 99.3vw 0 0;
+        border-color: #000 transparent transparent transparent;
     }
 
-    .black-bottom {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 80vw 10vh 0;
-        border-color: transparent transparent #000 transparent;
-        bottom: 0;
+    &-title {
+        text-transform: uppercase;
+        color: #FFF;
+        font-size: 3rem;
+
+        span {
+            margin: 0 30px;
+            color: #FDCB6E;
+            font-size: 3.5rem;
+        }
     }
+
+    // .black-bottom {
+    //     width: 0;
+    //     height: 0;
+    //     border-style: solid;
+    //     border-width: 0 99.3vw 10vh 0;
+    //     border-color: transparent transparent #000 transparent;
+    // }
 }

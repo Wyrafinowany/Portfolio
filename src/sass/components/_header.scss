@@ -1,17 +1,17 @@
 .jumbotron {
-    height: 100vh;
-    background-image: url('../../images/background-min.jpg');
-    background-size: cover;
-    background-position: center top;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 100vh;
+    background-image: url('../../images/background-min.jpg');
+    background-size: cover;
+    background-position: center top;
 
     &-title {
-        font-weight: bold;
         margin: 0;
         font-size: 5rem;
+        font-weight: bold;
         color: #fff;
         line-height: 1.3;
         text-shadow: 1px 1px 3px #000;
@@ -22,30 +22,34 @@
         font-size: 3rem;
         color: #FDCB6E;
     }
+
+    .black-bottom {
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        border-style: solid;
+        border-width: 10vh 0 0 99.3vw;
+        border-color: transparent transparent transparent #000;
+    }
 }
 
+@media (max-width: 992px) {
 
-.black-bottom1 {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10vh 0 0 100vw;
-    border-color: transparent transparent transparent #000;
-    bottom: -10px;
+    .jumbotron {
+        &-title {
+            padding: 5%;
+            font-size: 2.5rem;
+            margin-bottom: 5%;
+        }
+
+        &-subtitle {
+            margin-bottom: 50%;
+            font-size: 2.2rem;
+        }
+
+        .black-bottom {
+            display: none;
+        }
+    }
 }
-
-// .jumbotron::after {
-//     border-color: #000 transparent;
-//     border-width: 0 0 30px 80vw;
-//     bottom: 0px;
-// }
-
-// .jumbotron::after,
-// .jumbotron::before {
-//     content: "";
-//     position: absolute;
-//     width: 0;
-//     height: 0;
-//     border-style: solid;
-// }

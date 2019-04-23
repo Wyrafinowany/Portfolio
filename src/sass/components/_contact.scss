@@ -1,0 +1,124 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3% 0;
+    background: linear-gradient(-30deg, #131313 0, #131313 50%, #171717 50%, #171717 100%);
+
+    &-title {
+        margin-bottom: 3%;
+        color: #FFF;
+        font-size: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+
+        span {
+            margin: 0 30px;
+            color: #FDCB6E;
+            font-size: 3.5rem;
+        }
+    }
+
+    &-container {
+        max-width: 45vw;
+        padding: 5% 5%;
+        background-color: #000;
+        box-shadow: 0px 0px 50px 0 rgba(0, 0, 0, 0.7);
+
+        label {
+            min-width: 100%;
+            text-align: left;
+            color: #FDCB6E;
+        }
+    }
+
+    &-form {
+        min-width: 100%;
+        margin: 0 0 8% 0;
+        padding: 3% 1%;
+        color: #FFF;
+        outline: none;
+        font-size: 1.2rem;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-width: 1px;
+        background-color: inherit;
+        transition-duration: 1s;
+
+        &:valid {
+            border-color: #FDCB6E;
+        }
+
+        &:invalid {
+            box-shadow: none;
+        }
+
+        &:focus {
+            color: #FFF;
+            border-bottom-color: #FDCB6E;
+
+            &::placeholder {
+                opacity: 0;
+            }
+        }
+
+        &::placeholder {
+            opacity: 0.3;
+            font-weight: 500;
+            color: #FFF;
+            text-transform: uppercase;
+        }
+    }
+
+    .textarea {
+        height: 160px;
+    }
+
+    button {
+        min-width: 200px;
+        min-height: 50px;
+        padding: 20px;
+        border: 2px solid #FDCB6E;
+        color: #FDCB6E;
+        opacity: 0.7;
+        cursor: pointer;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        background-color: inherit;
+        transition: 0.5s;
+
+        &:hover {
+            opacity: 1;
+            box-shadow: 0px 0px 3px 1px rgba(253, 203, 110, 0.85);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .contact {
+        &-title {
+            font-size: 2rem;
+            margin-bottom: 8%;
+
+            span {
+                font-size: 2.5rem;
+                margin: 0 20px;
+            }
+        }
+
+        &-container {
+            max-width: 80vw;
+            margin: 0 5%;
+            padding: 8% 8%;
+        }
+
+        &-form {
+            max-width: 20vw;
+        }
+    }
+}

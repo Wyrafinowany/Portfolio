@@ -1,36 +1,32 @@
 .about {
+    text-align: center;
     background-color: #171717;
 
     .black-top {
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 0 100vw 10vh 0;
+        border-width: 0 99.3vw 10vh 0;
         border-color: transparent #000 transparent transparent;
+    }
+
+    &-title {
+        text-transform: uppercase;
+        color: #FFF;
+        font-size: 3rem;
+
+        span {
+            margin: 0 30px;
+            color: #FDCB6E;
+            font-size: 3.5rem;
+        }
     }
 
     .black-bottom {
         width: 0;
         height: 0;
         border-style: solid;
-        // border-width: 10vh 0 0 80vw;
-        border-width: 0 100vw 10vh 0;
-        border-color: transparent transparent #000 transparent;
+        border-width: 10vh 99.3vw 0 0;
+        border-color: transparent #000 transparent transparent;
     }
 }
-
-
-// .about::after {
-//     border-color: #000 transparent;
-//     border-width: 30px 99vw 0px 0px;
-//     top: 0px;
-// }
-
-// .about::after,
-// .about::before {
-//     content: "";
-//     position: absolute;
-//     width: 0;
-//     height: 0;
-//     border-style: solid;
-// }

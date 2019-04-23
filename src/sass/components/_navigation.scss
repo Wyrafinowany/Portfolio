@@ -33,7 +33,7 @@ nav {
                 font-size: 1.2rem;
                 padding: 5px 0;
                 border-bottom: 1px solid #FDCB6E;
-                color: #fff;
+                color: #FFF;
 
                 &::before {
                     position: absolute;
@@ -42,7 +42,7 @@ nav {
                     max-width: 0;
                     padding: 5px 0;
                     overflow: hidden;
-                    border-bottom: 1px solid #dfe6e9;
+                    border-bottom: 1px solid #FFF;
                     color: #FDCB6E;
                     content: attr(data-hover);
                     white-space: nowrap;
@@ -93,13 +93,13 @@ nav {
                 height: 3px;
                 position: absolute;
                 margin: 20px 0 0 20px;
-                background: #fff;
+                background: #FFF;
                 content: "";
                 transition: 0.8s ease;
             }
 
             &:before {
-                box-shadow: #fff 0 14px 0 0;
+                box-shadow: #FFF 0 14px 0 0;
                 top: 0;
             }
 
@@ -130,7 +130,7 @@ nav {
         }
 
         .toggle {
-            min-width: 80vw;
+            min-width: 85vw;
             z-index: 98;
             display: block;
             background-color: rgba(23, 23, 23, 0.9);
@@ -155,7 +155,7 @@ nav {
 
                     a {
                         padding: 15px 0;
-                        color: #fff;
+                        color: #FFF;
                         font-size: 1.5rem;
                         font-weight: 500;
                         text-decoration: none;
