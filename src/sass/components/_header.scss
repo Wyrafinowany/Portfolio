@@ -4,15 +4,17 @@
     align-items: center;
     text-align: center;
     height: 100vh;
-    background-image: url('../../images/background-min.jpg');
+    margin: 0;
+    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
-    background-position: center top;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('../../images/background-header.jpg');
 
     &-title {
         margin: 0;
         font-size: 5rem;
         font-weight: bold;
-        color: #fff;
+        color: #FFF;
         line-height: 1.3;
         text-shadow: 1px 1px 3px #000;
     }
@@ -21,16 +23,6 @@
         display: block;
         font-size: 3rem;
         color: #FDCB6E;
-    }
-
-    .black-bottom {
-        position: absolute;
-        width: 0;
-        height: 0;
-        bottom: 0;
-        border-style: solid;
-        border-width: 10vh 0 0 99.3vw;
-        border-color: transparent transparent transparent #000;
     }
 }
 

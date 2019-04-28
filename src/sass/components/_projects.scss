@@ -1,32 +1,213 @@
 .projects {
-    background-color: #171717;
+    padding: 3% 0;
     text-align: center;
-
-    .black-top {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 10vh 99.3vw 0 0;
-        border-color: #000 transparent transparent transparent;
-    }
+    box-shadow: 0px 0px 50px 5px rgba(253, 203, 110, 0.5);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/background-projects.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 
     &-title {
-        text-transform: uppercase;
-        color: #FFF;
+        display: inline-block;
+        padding: 5px 20px;
+        margin-bottom: 0;
         font-size: 3rem;
+        letter-spacing: 1px;
+        text-transform: lowercase;
+        color: #FFF;
 
         span {
             margin: 0 30px;
-            color: #FDCB6E;
+            color: #cfa75c;
             font-size: 3.5rem;
         }
     }
 
-    // .black-bottom {
-    //     width: 0;
-    //     height: 0;
-    //     border-style: solid;
-    //     border-width: 0 99.3vw 10vh 0;
-    //     border-color: transparent transparent #000 transparent;
-    // }
+    .linear-border {
+        height: 2px;
+        margin: 0 auto;
+        max-width: 50vw;
+        background: linear-gradient(to right, rgba(23, 23, 23, 0) 10%, rgba(253, 203, 110, 1) 50%, rgba(23, 23, 23, 0) 90%);
+    }
+
+    &-container {
+        max-width: 60vw;
+        margin: 3% auto;
+        padding: 3% 2%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        box-shadow: 0 8px 60px 0 #161616;
+    }
+
+    &-row {
+        display: flex;
+        justify-content: space-around;
+        // margin-bottom: 4%;
+
+        .project-box {
+            margin-bottom: 4%;
+            border: 3px solid rgba(253, 203, 110, 0.4);
+            background-color: rgba(0, 0, 0, 0.5);
+
+            .image {
+                width: 300px;
+                min-height: 200px;
+                background-size: cover;
+                background-position: 0 0;
+                animation: moving linear infinite;
+            }
+
+            [data-image="shop"] {
+                background-image: url('../../images/projects/shop.png');
+                animation-duration: 50s;
+                animation-delay: 5s;
+            }
+
+            [data-image="sudoku"] {
+                background-image: url('../../images/projects/sudoku.png');
+                animation-duration: 10s;
+                animation-delay: 9s;
+            }
+
+            [data-image="awax"] {
+                background-image: url('../../images/projects/awax.png');
+                animation-duration: 100s;
+            }
+
+            [data-image="country-app"] {
+                background-image: url('../../images/projects/CountryApp.png');
+                animation-duration: 20s;
+                animation-delay: 8s;
+            }
+
+            [data-image="kanban"] {
+                background-image: url('../../images/projects/kanban.png');
+                animation-duration: 30s;
+                animation-delay: 7s;
+            }
+
+            [data-image="group-project"] {
+                background-image: url('../../images/projects/group-project.png');
+                animation-duration: 80s;
+                animation-delay: 2s;
+            }
+
+            .information {
+                margin: 4% 0;
+
+                .title {
+                    margin: 5% 0;
+                    color: #FDCB6E;
+                }
+
+                .description {
+                    max-width: 300px;
+                    min-height: 90px;
+                    padding: 10px 15px;
+                    letter-spacing: 1px;
+                    color: #FFF;
+                }
+
+                .buttons {
+                    display: flex;
+                    justify-content: space-around;
+
+                    .btn {
+                        background-color: rgba(253, 203, 110, 0.4);
+                        margin-bottom: 10px;
+                        padding: 5px 10px;
+                        border-radius: 3px;
+                        color: #000;
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+
+                        &:hover {
+                            background-color: rgba(253, 203, 110, 0.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .projects {
+        padding: 3% 5%;
+
+        &-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            padding: 5px 5px;
+
+            span {
+                margin: 0 8px;
+                font-size: 3rem;
+            }
+        }
+
+        .linear-border {
+            max-width: 80vw;
+        }
+
+        &-container {
+            background-color: inherit;
+            box-shadow: none;
+        }
+
+        &-row {
+            .project-box {
+                margin: 10%;
+                max-width: 280px;
+
+                .image {
+                    max-width: 274px;
+                }
+
+                .information {
+
+                    .title {
+                        font-size: 1.5rem;
+                    }
+
+                    .description {
+                        font-size: 1.2rem;
+                    }
+
+                    .buttons {
+                        .btn {
+                            background-color: rgba(253, 203, 110, 0.7);
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes moving {
+    0% {
+        background-position: 0 0;
+    }
+
+    10% {
+        background-position: 0 0;
+    }
+
+    45% {
+        background-position: 0 100%;
+    }
+
+    55% {
+        background-position: 0 100%;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }

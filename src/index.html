@@ -10,6 +10,7 @@
         content="Dominik Zajac, front-end, HTML, CSS, JavaScript, js, web-developer, react, portfolio">
     <meta name='author' content="Dominik Zajac">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -81,43 +82,161 @@
         <h1 class="jumbotron-title">Dominik Zajac
             <span class="jumbotron-subtitle">Junior Front-End Developer</span>
         </h1>
-        <div class="black-bottom"></div>
     </header>
     <!-- About me -->
     <section id="about" class="about">
-        <div class="black-top"></div>
         <h1 class="about-title"><span>~</span>About me<span>~</span></h1>
-        <div class="black-bottom"></div>
+        <div class="linear-border"></div>
+        <div class="row about-row">
+            <div class="image-box">
+                <img class="photo" src="images/user.png" alt="Photo">
+            </div>
+            <div class="text-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum velit dicta odit distinctio culpa
+                    voluptatem, obcaecati fugiat, architecto repellat modi ratione ullam accusantium ex qui reiciendis
+                    quaerat tempora! Qui!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorem dolore provident velit quo
+                    dolores laboriosam repellendus molestias voluptatibus veniam magnam nesciunt officia, mollitia
+                    reprehenderit numquam inventore? Officia, beatae quaerat?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorem dolore provident velit quo
+                    dolores laboriosam repellendus molestias voluptatibus veniam magnam nesciunt officia, mollitia
+                    reprehenderit numquam inventore? Officia, beatae quaerat?</p>
+            </div>
+        </div>
     </section>
     <!-- Projects -->
     <section id="projects" class="projects">
-        <div class="black-top"></div>
         <h1 class="projects-title"><span>~</span>Projects<span>~</span></h1>
-        <div class="black-bottom"></div>
+        <div class="linear-border"></div>
+        <div class="projects-container">
+            <div class="row projects-row">
+                <div class="project-box">
+                    <div class="image" data-image="shop"></div>
+                    <div class="information">
+                        <h5 class="title">Shop</h5>
+                        <p class="description">Shop application created using React, React-router and Redux.</p>
+                        <div class="buttons">
+                            <a href="https://sklep-narzedzia.firebaseapp.com" target="_blank" class="btn btn-demo">Live
+                                Demo</a>
+                            <a href="https://github.com/Wyrafinowany/React-shop" target="_blank"><button
+                                    class="btn btn-source">View Source</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="image" data-image="sudoku" alt=""></div>
+                    <div class="information">
+                        <h5 class="title">Sudoku</h5>
+                        <p class="description">Game that everyone knows. Created with React using free library
+                            Sudoku-umd.</p>
+                        <div class="buttons">
+                            <a href="https://wyrafinowany.github.io/Sudoku/" target="_blank" class="btn btn-demo">Live
+                                Demo</a>
+                            <a href="https://github.com/Wyrafinowany/Sudoku" target="_blank" class="btn btn-source">View
+                                Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="image" data-image="awax"></div>
+                    <div class="information">
+                        <h5 class="title">Awax</h5>
+                        <p class="description"> I created curious page from .psd file.</p>
+                        <div class="buttons">
+                            <a href="https://wyrafinowany.github.io/Dodatkowy-projekt/" target="_blank"
+                                class="btn btn-demo">Live Demo</a>
+                            <a href="https://github.com/Wyrafinowany/Dodatkowy-projekt" target="_blank"
+                                class="btn btn-source">View Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row projects-row">
+                <div class="project-box">
+                    <div class="image" data-image="country-app"></div>
+                    <div class="information">
+                        <h5 class="title">Country App</h5>
+                        <p class="description">Application that allows to see basic informations about countries.</p>
+                        <div class="buttons">
+                            <a href="https://wyrafinowany.github.io/28.5.Baza-panstw-cz-3/" target="_blank"
+                                class="btn btn-demo">Live
+                                Demo</button>
+                                <a href="https://github.com/Wyrafinowany/28.5.Baza-panstw-cz-3" target="_blank"
+                                    class="btn btn-source">View Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="image" data-image="kanban"></div>
+                    <div class="information">
+                        <h5 class="title">Kanban</h5>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="buttons">
+                            <a href="https://wyrafinowany.github.io/15.6.Kanban/" target="_blank"
+                                class="btn btn-demo">Live
+                                Demo</button>
+                                <a href="https://github.com/Wyrafinowany/15.6.Kanban" target="_blank"
+                                    class="btn btn-source">View Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="image" data-image="group-project"></div>
+                    <div class="information">
+                        <h5 class="title">Group project</h5>
+                        <p class="description">My first group project. Shop website based on design layout.</p>
+                        <div class="buttons">
+                            <a class="btn btn-demo disabled">Live
+                                Demo</button>
+                                <a href="https://github.com/Johny1010/WDP-1901-01" target="_blank"
+                                    class="btn btn-source">View Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Reference -->
     <section id="reference" class="reference">
         <h1 class="reference-title"><span>~</span>Reference<span>~</span></h1>
-        <div class="reference-container">
-            <div class="row box-row">
-                <div class="box">
-                    <i class="icon fa fa-file-pdf-o"></i>
-                    <h2 class="title">CV</h2>
+        <div class="linear-border"></div>
+        <div class="icons-row">
+            <div class="box">
+                <div class="iconbase">
+                    <div class="rect">
+                        <div class="icon">
+                            <a href="#" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="box">
-                    <i class="icon fa fa-linkedin"></i>
-                    <h2 class="title">Linkedin</h2>
+                <h2 class="title">CV</h2>
+            </div>
+            <div class="box">
+                <div class="iconbase">
+                    <div class="rect">
+                        <div class="icon">
+                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="box">
-                    <a href="https://github.com/Wyrafinowany" target="_blank"><i class="icon fa fa-github"></i></a>
-                    <h2 class="title">Github</h2>
+                <h2 class="title">Linkedin</h2>
+            </div>
+            <div class="box">
+                <div class="iconbase">
+                    <div class="rect">
+                        <div class="icon">
+                            <a href="https://github.com/Wyrafinowany" target="_blank"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
+                <h2 class="title">Github</h2>
             </div>
         </div>
     </section>
     <!-- Contact -->
     <section id="contact" class="contact">
         <h1 class="contact-title"><span>~</span>Contact<span>~</span></h1>
+        <div class="linear-border"></div>
         <div class="contact-container">
             <form action="https://formspree.io/zajac_dominik@onet.pl" method="POST">
                 <div class="row">
@@ -147,9 +266,10 @@
                 <button id="submit" type="submit">Send message</button>
             </form>
         </div>
-
+        <p class="footer"><span>© by</span> Dominik Zajac</p>
     </section>
 
+    <!-- Scripts -->
     <script src="scripts/app.js"></script>
 </body>
 

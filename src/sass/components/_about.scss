@@ -1,32 +1,109 @@
 .about {
+    padding: 3% 0;
     text-align: center;
     background-color: #171717;
-
-    .black-top {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 99.3vw 10vh 0;
-        border-color: transparent #000 transparent transparent;
-    }
+    box-shadow: 0px 0px 50px 5px rgba(253, 203, 110, 0.5);
 
     &-title {
-        text-transform: uppercase;
-        color: #FFF;
+        display: inline-block;
+        padding: 5px 20px;
+        margin-bottom: 0;
         font-size: 3rem;
+        letter-spacing: 1px;
+        text-transform: lowercase;
+        color: #FFF;
 
         span {
             margin: 0 30px;
-            color: #FDCB6E;
+            color: #cfa75c;
             font-size: 3.5rem;
         }
     }
 
-    .black-bottom {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 10vh 99.3vw 0 0;
-        border-color: transparent #000 transparent transparent;
+    .linear-border {
+        height: 2px;
+        margin: 0 auto;
+        max-width: 50vw;
+        background: linear-gradient(to right, rgba(23, 23, 23, 0) 10%, rgba(253, 203, 110, 1) 50%, rgba(23, 23, 23, 0) 90%);
+    }
+
+    &-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3% 0;
+
+        .image-box {
+            margin: 2%;
+
+            .photo {
+                width: 100%;
+                height: auto;
+                border-image: url(../../images/border.svg) 50 50;
+                border-style: inset;
+                border-width: 5px;
+                border-image-width: 20;
+            }
+        }
+
+        .text-box {
+            max-width: 35vw;
+            margin: 2%;
+
+            p {
+                text-align: left;
+                font-size: 1.4rem;
+                font-family: 'Roboto', sans-serif;
+                line-height: 2rem;
+                letter-spacing: 2px;
+                color: #FFF;
+
+                &::first-letter {
+                    font-size: 2rem;
+                    color: #cfa75c;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .about {
+        padding: 3% 5%;
+
+        &-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            padding: 5px 5px;
+
+            span {
+                margin: 0 8px;
+                font-size: 3rem;
+            }
+        }
+
+        .linear-border {
+            max-width: 80vw;
+        }
+
+        &-row {
+            margin: 8% 0;
+
+            .image-box {
+                margin: 5% 0;
+            }
+
+            .text-box {
+                max-width: 80vw;
+
+                p {
+                    font-size: 1.5rem;
+                    line-height: 3rem;
+                    letter-spacing: 1px;
+                }
+            }
+        }
     }
 }
