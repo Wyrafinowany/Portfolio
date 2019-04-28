@@ -579,8 +579,8 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.2))), url("../../images/background-header.jpg");
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../../images/background-header.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.2))), url("../images/background-header.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../images/background-header.jpg");
 }
 
 .jumbotron-title {
@@ -665,8 +665,8 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
 .about-row .image-box .photo {
   width: 100%;
   height: auto;
-  -o-border-image: url(../../images/border.svg) 50 50;
-     border-image: url(../../images/border.svg) 50 50;
+  -o-border-image: url(../images/border.svg) 50 50;
+     border-image: url(../images/border.svg) 50 50;
   border-style: inset;
   border-width: 5px;
   border-image-width: 20;
@@ -736,8 +736,8 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
   text-align: center;
   -webkit-box-shadow: 0px 0px 50px 5px rgba(253, 203, 110, 0.5);
           box-shadow: 0px 0px 50px 5px rgba(253, 203, 110, 0.5);
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../../images/background-projects.jpg");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/background-projects.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/background-projects.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/background-projects.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -801,7 +801,7 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
 }
 
 .projects-row .project-box [data-image="shop"] {
-  background-image: url("../../images/projects/shop.png");
+  background-image: url("../images/projects/shop.png");
   -webkit-animation-duration: 50s;
           animation-duration: 50s;
   -webkit-animation-delay: 5s;
@@ -809,7 +809,7 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
 }
 
 .projects-row .project-box [data-image="sudoku"] {
-  background-image: url("../../images/projects/sudoku.png");
+  background-image: url("../images/projects/sudoku.png");
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
   -webkit-animation-delay: 9s;
@@ -817,13 +817,13 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
 }
 
 .projects-row .project-box [data-image="awax"] {
-  background-image: url("../../images/projects/awax.png");
+  background-image: url("../images/projects/awax.png");
   -webkit-animation-duration: 100s;
           animation-duration: 100s;
 }
 
 .projects-row .project-box [data-image="country-app"] {
-  background-image: url("../../images/projects/CountryApp.png");
+  background-image: url("../images/projects/CountryApp.png");
   -webkit-animation-duration: 20s;
           animation-duration: 20s;
   -webkit-animation-delay: 8s;
@@ -831,7 +831,7 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
 }
 
 .projects-row .project-box [data-image="kanban"] {
-  background-image: url("../../images/projects/kanban.png");
+  background-image: url("../images/projects/kanban.png");
   -webkit-animation-duration: 30s;
           animation-duration: 30s;
   -webkit-animation-delay: 7s;
@@ -839,7 +839,7 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
 }
 
 .projects-row .project-box [data-image="group-project"] {
-  background-image: url("../../images/projects/group-project.png");
+  background-image: url("../images/projects/group-project.png");
   -webkit-animation-duration: 80s;
           animation-duration: 80s;
   -webkit-animation-delay: 2s;

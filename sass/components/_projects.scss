@@ -2,7 +2,7 @@
     padding: 3% 0;
     text-align: center;
     box-shadow: 0px 0px 50px 5px rgba(253, 203, 110, 0.5);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/background-projects.jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/background-projects.jpg');
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -58,36 +58,36 @@
             }
 
             [data-image="shop"] {
-                background-image: url('../../images/projects/shop.png');
+                background-image: url('../images/projects/shop.png');
                 animation-duration: 50s;
                 animation-delay: 5s;
             }
 
             [data-image="sudoku"] {
-                background-image: url('../../images/projects/sudoku.png');
+                background-image: url('../images/projects/sudoku.png');
                 animation-duration: 10s;
                 animation-delay: 9s;
             }
 
             [data-image="awax"] {
-                background-image: url('../../images/projects/awax.png');
+                background-image: url('../images/projects/awax.png');
                 animation-duration: 100s;
             }
 
             [data-image="country-app"] {
-                background-image: url('../../images/projects/CountryApp.png');
+                background-image: url('../images/projects/CountryApp.png');
                 animation-duration: 20s;
                 animation-delay: 8s;
             }
 
             [data-image="kanban"] {
-                background-image: url('../../images/projects/kanban.png');
+                background-image: url('../images/projects/kanban.png');
                 animation-duration: 30s;
                 animation-delay: 7s;
             }
 
             [data-image="group-project"] {
-                background-image: url('../../images/projects/group-project.png');
+                background-image: url('../images/projects/group-project.png');
                 animation-duration: 80s;
                 animation-delay: 2s;
             }

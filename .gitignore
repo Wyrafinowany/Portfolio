@@ -78,5 +78,5 @@ typings/
 # Serverless directories
 .serverless
 
-
+sass/style.css.map
 # End of https://www.gitignore.io/api/node
