@@ -47,6 +47,8 @@ window.addEventListener('scroll', (e) => {
 //Disable menu after click on <a>
 $('.toggle-menu a').on('click', function (e) {
   $('.toggle').toggleClass('toggle-active');
+  $('.navicon').toggleClass('navicon-active');
+
 });
 //Active/disable hamburger menu
 $('.navicon').on('click', function (e) {
@@ -55,3 +57,43 @@ $('.navicon').on('click', function (e) {
   $(this).toggleClass('navicon-active');
   $('.toggle').toggleClass('toggle-active');
 });
+// ScrollReveal().destroy();
+(function scrollReveal() {
+
+  window.sr = ScrollReveal();
+  // sr.reveal('.about-row .image-box', {
+  //     // reset: true,
+  //     delay: 300,
+  //     distance: '10rem'
+  // });
+  // ScrollReveal().reveal('.about-row .text-box', {
+  //     // reset: true,
+  //     delay: 450
+  // });
+  // sr.destroy();
+
+  sr.reveal('.project-box', {
+    duration: 600,
+    distance: '20px',
+    easing: 'ease-out',
+    origin: 'bottom',
+    scale: 1,
+    viewFactor: 0,
+    // viewOffset: {
+    // top: 800,
+    // right: 0,
+    // bottom: 0,
+    // left: 0,
+    // },
+
+    afterReveal: revealChildren,
+  }, 150);
+  var revealChildren = sr.reveal('.title, p, .buttons', {
+    duration: 500,
+    scale: 1,
+    distance: '20px',
+    origin: 'top',
+    easing: 'ease-out',
+    viewFactor: 1,
+  }, 75);
+})();

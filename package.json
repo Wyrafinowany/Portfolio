@@ -7,9 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm-run-all build:* ",
     "build:sass": "node-sass --output-style compact -o css sass",
-    // "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
-        "watch": "npm-run-all build -p watch:*",
+    "watch": "npm-run-all build -p watch:*",
     "watch:sassprefixer": "onchange sass/ -- npm-run-all -s build-dev:sass build:autoprefixer"
   },
   "author": "",
@@ -17,6 +16,7 @@
   "devDependencies": {},
   "dependencies": {
     "node-sass": "^4.11.0",
-    "sass": "^1.18.0"
+    "sass": "^1.18.0",
+    "scrollreveal": "^4.0.5"
   }
 }
