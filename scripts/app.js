@@ -27,6 +27,7 @@ window.addEventListener('load', function () {
   });
 });
 
+// =================================== //
 //Navigation 
 let previousScrollTop;
 const navigation = document.querySelector('nav');
@@ -43,7 +44,7 @@ window.addEventListener('scroll', (e) => {
   previousScrollTop = scrollTop;
 });
 
-//      Hamburger menu
+//     *~* Hamburger menu *~*
 //Disable menu after click on <a>
 $('.toggle-menu a').on('click', function (e) {
   $('.toggle').toggleClass('toggle-active');
@@ -57,43 +58,83 @@ $('.navicon').on('click', function (e) {
   $(this).toggleClass('navicon-active');
   $('.toggle').toggleClass('toggle-active');
 });
-// ScrollReveal().destroy();
-(function scrollReveal() {
 
-  window.sr = ScrollReveal();
-  // sr.reveal('.about-row .image-box', {
-  //     // reset: true,
-  //     delay: 300,
-  //     distance: '10rem'
-  // });
-  // ScrollReveal().reveal('.about-row .text-box', {
-  //     // reset: true,
-  //     delay: 450
-  // });
-  // sr.destroy();
+// =================================== //
+//   *~* ScrollReveal *~*
+window.sr = ScrollReveal();
 
-  sr.reveal('.project-box', {
-    duration: 600,
-    distance: '20px',
-    easing: 'ease-out',
-    origin: 'bottom',
-    scale: 1,
-    viewFactor: 0,
-    // viewOffset: {
-    // top: 800,
-    // right: 0,
-    // bottom: 0,
-    // left: 0,
-    // },
+// Titles and linear-border
+sr.reveal('.title, .linear-border', {
+  distance: '60px',
+  easing: 'ease-out',
+  viewFactor: 1,
+});
 
-    afterReveal: revealChildren,
-  }, 150);
-  var revealChildren = sr.reveal('.title, p, .buttons', {
-    duration: 500,
-    scale: 1,
-    distance: '20px',
-    origin: 'top',
-    easing: 'ease-out',
-    viewFactor: 1,
-  }, 75);
-})();
+// Navigation
+sr.reveal('nav .navbar-list', {
+  distance: '10px',
+  easing: 'ease-out',
+});
+
+// Section header
+sr.reveal('header .jumbotron-title, header .jumbotron-subtitle', {
+  easing: 'ease-out',
+}, 50);
+
+sr.reveal('header .jumbotron-title', {
+  distance: '5rem',
+});
+
+sr.reveal('header .jumbotron-subtitle', {
+  distance: '10rem',
+});
+
+// Section about
+sr.reveal('.about img', {
+  easing: 'ease-out',
+  distance: '20px',
+  wait: 6000
+});
+
+sr.reveal('.about p', {
+  distance: '20px',
+  easing: 'ease-out',
+  viewFactor: 1,
+}, 75);
+
+// Section projects
+const revealChildren = sr.reveal('.information-title, .information p, .information .buttons', {
+  duration: 500,
+  distance: '20px',
+  easing: 'ease-out',
+  viewFactor: 1,
+}, 75);
+
+sr.reveal('.project-box', {
+  distance: '20px',
+  easing: 'ease-out',
+  viewFactor: '0.3',
+  afterReveal: revealChildren,
+}, 150);
+
+// Section reference
+const revealChildrenIcon = sr.reveal('.reference .icon-title', {
+  duration: 500,
+  distance: '20px',
+  easing: 'ease-out',
+  viewFactor: 1,
+});
+
+sr.reveal('.reference .iconbase', {
+  duration: 700,
+  distance: '20px',
+  easing: 'ease-out',
+  viewFactor: 1,
+  afterReveal: revealChildrenIcon,
+});
+
+// Section contact
+sr.reveal('.contact-container', {
+  distance: '8rem',
+  easing: 'ease-out'
+});
