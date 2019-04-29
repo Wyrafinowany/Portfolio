@@ -346,35 +346,124 @@ template {
           align-items: center;
   width: 100vw;
   height: 100vh;
-  background: #2D3436;
+  background: #171717;
 }
 
-.loading-page .counter {
-  text-align: center;
-}
-
-.loading-page .counter h1,
-.loading-page .counter p {
+.loading-page h1 {
   margin: 0;
   padding: 0;
-}
-
-.loading-page .counter p {
-  font-size: 40px;
   font-weight: 100;
-  color: #FDCB6E;
+  font-size: 1.6em;
+  color: #cfa75c;
 }
 
-.loading-page .counter h1 {
-  color: white;
-  font-size: 60px;
-  margin-top: -5px;
+.loading-page span {
+  position: relative;
+  top: 0.63em;
+  display: inline-block;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
 }
 
-.loading-page .counter hr {
-  background: #FDCB6E;
-  border: none;
-  height: 1px;
+.loading-page .let1 {
+  -webkit-animation: drop 1.2s ease-in-out infinite;
+          animation: drop 1.2s ease-in-out infinite;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.loading-page .let2 {
+  -webkit-animation: drop 1.2s ease-in-out infinite;
+          animation: drop 1.2s ease-in-out infinite;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+.loading-page .let3 {
+  -webkit-animation: drop 1.2s ease-in-out infinite;
+          animation: drop 1.2s ease-in-out infinite;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.loading-page .let4 {
+  -webkit-animation: drop 1.2s ease-in-out infinite;
+          animation: drop 1.2s ease-in-out infinite;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.loading-page .let5 {
+  -webkit-animation: drop 1.2s ease-in-out infinite;
+          animation: drop 1.2s ease-in-out infinite;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.loading-page .let6 {
+  -webkit-animation: drop 1.2s ease-in-out infinite;
+          animation: drop 1.2s ease-in-out infinite;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+}
+
+.loading-page .let7 {
+  -webkit-animation: drop 1.2s ease-in-out infinite;
+          animation: drop 1.2s ease-in-out infinite;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+@-webkit-keyframes drop {
+  10% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+    top: 3.78em;
+    -webkit-transform: rotateX(-360deg);
+            transform: rotateX(-360deg);
+  }
+  80% {
+    opacity: 1;
+    top: 3.78em;
+    -webkit-transform: rotateX(-360deg);
+            transform: rotateX(-360deg);
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    top: 6.94em;
+  }
+}
+
+@keyframes drop {
+  10% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+    top: 3.78em;
+    -webkit-transform: rotateX(-360deg);
+            transform: rotateX(-360deg);
+  }
+  80% {
+    opacity: 1;
+    top: 3.78em;
+    -webkit-transform: rotateX(-360deg);
+            transform: rotateX(-360deg);
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    top: 6.94em;
+  }
 }
 
 nav {
