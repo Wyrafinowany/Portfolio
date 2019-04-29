@@ -454,6 +454,7 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
     display: none;
   }
   .hamburger-menu {
+    z-index: 99;
     position: fixed;
     display: block;
     max-height: 0;
@@ -506,7 +507,6 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
   }
   .hamburger-menu .toggle {
     min-width: 100vw;
-    z-index: 98;
     display: block;
     background-color: rgba(23, 23, 23, 0.9);
     padding: 10%;

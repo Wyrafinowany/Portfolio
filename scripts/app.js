@@ -71,10 +71,15 @@ sr.reveal('.title, .linear-border', {
 });
 
 // Navigation
-sr.reveal('nav .navbar-list', {
-  distance: '10px',
-  easing: 'ease-out',
-});
+sr.reveal('nav .navbar-list', {});
+
+setTimeout(() => {
+  sr.reveal('nav .navbar-list', {
+    distance: '10px',
+    easing: 'ease-out',
+  });
+}, 700);
+
 
 // Section header
 sr.reveal('header .jumbotron-title, header .jumbotron-subtitle', {

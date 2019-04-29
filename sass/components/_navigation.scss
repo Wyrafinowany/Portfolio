@@ -74,6 +74,7 @@ nav {
 
     //Active hamburger menu
     .hamburger-menu {
+        z-index: 99;
         position: fixed;
         display: block;
         max-height: 0;
@@ -130,7 +131,6 @@ nav {
 
         .toggle {
             min-width: 100vw;
-            z-index: 98;
             display: block;
             background-color: rgba(23, 23, 23, 0.9);
             padding: 10%;
