@@ -344,22 +344,24 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  z-index: 10000;
   width: 100vw;
   height: 100vh;
   background: #171717;
 }
 
-.loading-page h1 {
-  margin: 0;
+.loading-page .loading-container {
+  margin-top: -20%;
   padding: 0;
   font-weight: 100;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   color: #cfa75c;
 }
 
 .loading-page span {
   position: relative;
-  top: 0.63em;
+  top: 20%;
   display: inline-block;
   text-transform: uppercase;
   opacity: 0;
@@ -368,52 +370,52 @@ template {
 }
 
 .loading-page .let1 {
-  -webkit-animation: drop 1.2s ease-in-out infinite;
-          animation: drop 1.2s ease-in-out infinite;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
-.loading-page .let2 {
-  -webkit-animation: drop 1.2s ease-in-out infinite;
-          animation: drop 1.2s ease-in-out infinite;
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
-}
-
-.loading-page .let3 {
-  -webkit-animation: drop 1.2s ease-in-out infinite;
-          animation: drop 1.2s ease-in-out infinite;
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
-}
-
-.loading-page .let4 {
-  -webkit-animation: drop 1.2s ease-in-out infinite;
-          animation: drop 1.2s ease-in-out infinite;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-
-.loading-page .let5 {
-  -webkit-animation: drop 1.2s ease-in-out infinite;
-          animation: drop 1.2s ease-in-out infinite;
+  -webkit-animation: drop 1.6s ease-in-out infinite;
+          animation: drop 1.6s ease-in-out infinite;
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
 
-.loading-page .let6 {
-  -webkit-animation: drop 1.2s ease-in-out infinite;
-          animation: drop 1.2s ease-in-out infinite;
+.loading-page .let2 {
+  -webkit-animation: drop 1.6s ease-in-out infinite;
+          animation: drop 1.6s ease-in-out infinite;
   -webkit-animation-delay: 1.7s;
           animation-delay: 1.7s;
 }
 
-.loading-page .let7 {
-  -webkit-animation: drop 1.2s ease-in-out infinite;
-          animation: drop 1.2s ease-in-out infinite;
+.loading-page .let3 {
+  -webkit-animation: drop 1.6s ease-in-out infinite;
+          animation: drop 1.6s ease-in-out infinite;
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s;
+}
+
+.loading-page .let4 {
+  -webkit-animation: drop 1.6s ease-in-out infinite;
+          animation: drop 1.6s ease-in-out infinite;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+}
+
+.loading-page .let5 {
+  -webkit-animation: drop 1.6s ease-in-out infinite;
+          animation: drop 1.6s ease-in-out infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.loading-page .let6 {
+  -webkit-animation: drop 1.6s ease-in-out infinite;
+          animation: drop 1.6s ease-in-out infinite;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+
+.loading-page .let7 {
+  -webkit-animation: drop 1.6s ease-in-out infinite;
+          animation: drop 1.6s ease-in-out infinite;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
 }
 
 @-webkit-keyframes drop {
@@ -422,13 +424,13 @@ template {
   }
   20% {
     opacity: 1;
-    top: 3.78em;
+    top: 4em;
     -webkit-transform: rotateX(-360deg);
             transform: rotateX(-360deg);
   }
   80% {
     opacity: 1;
-    top: 3.78em;
+    top: 4em;
     -webkit-transform: rotateX(-360deg);
             transform: rotateX(-360deg);
   }
@@ -437,7 +439,7 @@ template {
   }
   100% {
     opacity: 0;
-    top: 6.94em;
+    top: 20%;
   }
 }
 
@@ -447,13 +449,13 @@ template {
   }
   20% {
     opacity: 1;
-    top: 3.78em;
+    top: 4em;
     -webkit-transform: rotateX(-360deg);
             transform: rotateX(-360deg);
   }
   80% {
     opacity: 1;
-    top: 3.78em;
+    top: 4em;
     -webkit-transform: rotateX(-360deg);
             transform: rotateX(-360deg);
   }
@@ -462,7 +464,7 @@ template {
   }
   100% {
     opacity: 0;
-    top: 6.94em;
+    top: 20%;
   }
 }
 

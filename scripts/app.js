@@ -1,9 +1,7 @@
-// Pre-loader
+// Preloader
 const preloader = document.getElementById('loading-page');
 const activePage = document.querySelector('.disable');
-// var preload = document.getElementsByClassName('preload')[0];
 
-preloader.classList.add('show-preloader');
 window.addEventListener('load', function () {
   setTimeout(function () {
 
@@ -19,38 +17,6 @@ window.addEventListener('load', function () {
     });
   }, 0)
 });
-// window.addEventListener('load', function () {
-//   $(document).ready(function () {
-
-//     let counter = 0;
-//     let number = 0;
-
-//     const index = setInterval(() => {
-//       $('.loading-page .counter h1').html(number + "%");
-//       $('.loading-page .counter hr').css('width', `${number}%`);
-//       counter++;
-//       number++;
-
-//       if (counter === 101) {
-//         clearInterval(index);
-
-//         setTimeout(function () {
-
-//           preloader.style.display = 'none';
-//           activePage.classList.remove('disable');
-
-//           // Navigation ScrollReveal
-//           sr.reveal('nav .navbar-list', {
-//             distance: '30px',
-//             easing: 'ease-out',
-//             delay: '300',
-//             origin: 'top'
-//           });
-//         }, 500)
-//       }
-//     }, 50);
-//   });
-// });
 
 // =================================== //
 //Navigation 

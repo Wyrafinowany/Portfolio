@@ -2,51 +2,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    z-index: 10000;
 
     width: 100vw;
     height: 100vh;
 
     background: #171717;
 
-    // .counter {
-    //     text-align: center;
-
-    //     h1,
-    //     p {
-    //         margin: 0;
-    //         padding: 0;
-    //     }
-
-    //     p {
-    //         font-size: 40px;
-    //         font-weight: 100;
-    //         color: #FDCB6E;
-    //     }
-
-    //     h1 {
-    //         color: white;
-    //         font-size: 60px;
-    //         margin-top: -5px;
-    //     }
-
-    //     hr {
-    //         background: #FDCB6E;
-    //         border: none;
-    //         height: 1px;
-    //     }
-    // }
-
-    h1 {
-        margin: 0;
+    .loading-container {
+        margin-top: -20%;
         padding: 0;
         font-weight: 100;
-        font-size: 1.6em;
+        font-size: 1.6rem;
         color: #cfa75c;
     }
 
     span {
         position: relative;
-        top: 0.63em;
+        top: 20%;
         display: inline-block;
         text-transform: uppercase;
         opacity: 0;
@@ -54,39 +28,38 @@
     }
 
     .let1 {
-        animation: drop 1.2s ease-in-out infinite;
-        animation-delay: 1.2s;
-    }
-
-    .let2 {
-        animation: drop 1.2s ease-in-out infinite;
-        animation-delay: 1.3s;
-    }
-
-    .let3 {
-        animation: drop 1.2s ease-in-out infinite;
-        animation-delay: 1.4s;
-    }
-
-    .let4 {
-        animation: drop 1.2s ease-in-out infinite;
-        animation-delay: 1.5s;
-
-    }
-
-    .let5 {
-        animation: drop 1.2s ease-in-out infinite;
+        animation: drop 1.6s ease-in-out infinite;
         animation-delay: 1.6s;
     }
 
-    .let6 {
-        animation: drop 1.2s ease-in-out infinite;
+    .let2 {
+        animation: drop 1.6s ease-in-out infinite;
         animation-delay: 1.7s;
     }
 
-    .let7 {
-        animation: drop 1.2s ease-in-out infinite;
+    .let3 {
+        animation: drop 1.6s ease-in-out infinite;
         animation-delay: 1.8s;
+    }
+
+    .let4 {
+        animation: drop 1.6s ease-in-out infinite;
+        animation-delay: 1.9s;
+    }
+
+    .let5 {
+        animation: drop 1.6s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    .let6 {
+        animation: drop 1.6s ease-in-out infinite;
+        animation-delay: 2.1s;
+    }
+
+    .let7 {
+        animation: drop 1.6s ease-in-out infinite;
+        animation-delay: 2.2s;
     }
 }
 
@@ -98,13 +71,13 @@
 
     20% {
         opacity: 1;
-        top: 3.78em;
+        top: 4em;
         transform: rotateX(-360deg);
     }
 
     80% {
         opacity: 1;
-        top: 3.78em;
+        top: 4em;
         transform: rotateX(-360deg);
     }
 
@@ -114,6 +87,6 @@
 
     100% {
         opacity: 0;
-        top: 6.94em
+        top: 20%;
     }
 }
