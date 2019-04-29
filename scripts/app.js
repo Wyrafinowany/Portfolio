@@ -14,13 +14,21 @@ window.addEventListener('load', function () {
       counter++;
       number++;
 
-      if (counter === 1) {
+      if (counter === 101) {
         clearInterval(index);
 
         setTimeout(function () {
 
           preloader.style.display = 'none';
           activePage.classList.remove('disable');
+
+          // Navigation ScrollReveal
+          sr.reveal('nav .navbar-list', {
+            distance: '30px',
+            easing: 'ease-out',
+            delay: '300',
+            origin: 'top'
+          });
         }, 500)
       }
     }, 50);
@@ -70,20 +78,10 @@ sr.reveal('.title, .linear-border', {
   viewFactor: 1,
 });
 
-// Navigation
-sr.reveal('nav .navbar-list', {});
-
-setTimeout(() => {
-  sr.reveal('nav .navbar-list', {
-    distance: '10px',
-    easing: 'ease-out',
-  });
-}, 700);
-
-
 // Section header
 sr.reveal('header .jumbotron-title, header .jumbotron-subtitle', {
   easing: 'ease-out',
+  delay: '300'
 }, 50);
 
 sr.reveal('header .jumbotron-title', {
