@@ -112,8 +112,9 @@
 
 @media (max-width: 992px) {
     .projects {
+        width: 100%;
+        height: 100%;
         padding: 3% 5%;
-        background-size: auto;
 
         &-title {
             display: flex;

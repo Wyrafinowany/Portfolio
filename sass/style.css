@@ -1048,8 +1048,9 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
 
 @media (max-width: 992px) {
   .projects {
+    width: 100%;
+    height: 100%;
     padding: 3% 5%;
-    background-size: auto;
   }
   .projects-title {
     display: -webkit-box;
