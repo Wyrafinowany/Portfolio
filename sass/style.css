@@ -1,3 +1,109 @@
+body {
+  background-color: #000;
+  font-family: 'Raleway', sans-serif;
+}
+
+.about-title,
+.projects-title,
+.reference-title,
+.contact-title {
+  display: inline-block;
+  padding: 5px 20px;
+  margin-bottom: 0;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  color: #FFF;
+}
+
+.about-title span,
+.projects-title span,
+.reference-title span,
+.contact-title span {
+  margin: 0 30px;
+  color: #cfa75c;
+  font-size: 3.5rem;
+}
+
+.loading-container .let1 {
+  -webkit-animation: drop 2s ease-in-out infinite;
+          animation: drop 2s ease-in-out infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.loading-container .let2 {
+  -webkit-animation: drop 2s ease-in-out infinite;
+          animation: drop 2s ease-in-out infinite;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+
+.loading-container .let3 {
+  -webkit-animation: drop 2s ease-in-out infinite;
+          animation: drop 2s ease-in-out infinite;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.loading-container .let4 {
+  -webkit-animation: drop 2s ease-in-out infinite;
+          animation: drop 2s ease-in-out infinite;
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+}
+
+.loading-container .let5 {
+  -webkit-animation: drop 2s ease-in-out infinite;
+          animation: drop 2s ease-in-out infinite;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.loading-container .let6 {
+  -webkit-animation: drop 2s ease-in-out infinite;
+          animation: drop 2s ease-in-out infinite;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.loading-container .let7 {
+  -webkit-animation: drop 2s ease-in-out infinite;
+          animation: drop 2s ease-in-out infinite;
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
+@-webkit-keyframes drop {
+  10% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes drop {
+  10% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -352,120 +458,16 @@ template {
 }
 
 .loading-page .loading-container {
-  margin-top: -20%;
   padding: 0;
   font-weight: 100;
-  font-size: 1.6rem;
+  font-size: 2.6rem;
   color: #cfa75c;
 }
 
 .loading-page span {
-  position: relative;
-  top: 20%;
   display: inline-block;
   text-transform: uppercase;
   opacity: 0;
-  -webkit-transform: rotateX(-90deg);
-          transform: rotateX(-90deg);
-}
-
-.loading-page .let1 {
-  -webkit-animation: drop 1.6s ease-in-out infinite;
-          animation: drop 1.6s ease-in-out infinite;
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
-}
-
-.loading-page .let2 {
-  -webkit-animation: drop 1.6s ease-in-out infinite;
-          animation: drop 1.6s ease-in-out infinite;
-  -webkit-animation-delay: 1.7s;
-          animation-delay: 1.7s;
-}
-
-.loading-page .let3 {
-  -webkit-animation: drop 1.6s ease-in-out infinite;
-          animation: drop 1.6s ease-in-out infinite;
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
-}
-
-.loading-page .let4 {
-  -webkit-animation: drop 1.6s ease-in-out infinite;
-          animation: drop 1.6s ease-in-out infinite;
-  -webkit-animation-delay: 1.9s;
-          animation-delay: 1.9s;
-}
-
-.loading-page .let5 {
-  -webkit-animation: drop 1.6s ease-in-out infinite;
-          animation: drop 1.6s ease-in-out infinite;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-.loading-page .let6 {
-  -webkit-animation: drop 1.6s ease-in-out infinite;
-          animation: drop 1.6s ease-in-out infinite;
-  -webkit-animation-delay: 2.1s;
-          animation-delay: 2.1s;
-}
-
-.loading-page .let7 {
-  -webkit-animation: drop 1.6s ease-in-out infinite;
-          animation: drop 1.6s ease-in-out infinite;
-  -webkit-animation-delay: 2.2s;
-          animation-delay: 2.2s;
-}
-
-@-webkit-keyframes drop {
-  10% {
-    opacity: 0.5;
-  }
-  20% {
-    opacity: 1;
-    top: 4em;
-    -webkit-transform: rotateX(-360deg);
-            transform: rotateX(-360deg);
-  }
-  80% {
-    opacity: 1;
-    top: 4em;
-    -webkit-transform: rotateX(-360deg);
-            transform: rotateX(-360deg);
-  }
-  90% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    top: 20%;
-  }
-}
-
-@keyframes drop {
-  10% {
-    opacity: 0.5;
-  }
-  20% {
-    opacity: 1;
-    top: 4em;
-    -webkit-transform: rotateX(-360deg);
-            transform: rotateX(-360deg);
-  }
-  80% {
-    opacity: 1;
-    top: 4em;
-    -webkit-transform: rotateX(-360deg);
-            transform: rotateX(-360deg);
-  }
-  90% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    top: 20%;
-  }
 }
 
 nav {
@@ -712,22 +714,6 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
           box-shadow: 0px 0px 50px 5px rgba(253, 203, 110, 0.5);
 }
 
-.about-title {
-  display: inline-block;
-  padding: 5px 20px;
-  margin-bottom: 0;
-  font-size: 3rem;
-  letter-spacing: 1px;
-  text-transform: lowercase;
-  color: #FFF;
-}
-
-.about-title span {
-  margin: 0 30px;
-  color: #cfa75c;
-  font-size: 3.5rem;
-}
-
 .about .linear-border {
   height: 2px;
   margin: 0 auto;
@@ -832,22 +818,6 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-}
-
-.projects-title {
-  display: inline-block;
-  padding: 5px 20px;
-  margin-bottom: 0;
-  font-size: 3rem;
-  letter-spacing: 1px;
-  text-transform: lowercase;
-  color: #FFF;
-}
-
-.projects-title span {
-  margin: 0 30px;
-  color: #cfa75c;
-  font-size: 3.5rem;
 }
 
 .projects .linear-border {
@@ -966,7 +936,7 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
   background-color: rgba(253, 203, 110, 0.4);
   margin-bottom: 10px;
   padding: 5px 10px;
-  border-radius: 3px;
+  border-radius: 0px;
   color: #000;
 }
 
@@ -1069,22 +1039,6 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
   background-color: #171717;
   -webkit-box-shadow: 0px 0px 50px 5px rgba(253, 203, 110, 0.5);
           box-shadow: 0px 0px 50px 5px rgba(253, 203, 110, 0.5);
-}
-
-.reference-title {
-  display: inline-block;
-  padding: 5px 20px;
-  margin-bottom: 0;
-  font-size: 3rem;
-  letter-spacing: 1px;
-  text-transform: lowercase;
-  color: #FFF;
-}
-
-.reference-title span {
-  margin: 0 30px;
-  color: #cfa75c;
-  font-size: 3.5rem;
 }
 
 .reference .linear-border {
@@ -1293,22 +1247,6 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
   background: linear-gradient(-30deg, #131313 0, #131313 50%, #171717 50%, #171717 100%);
 }
 
-.contact-title {
-  display: inline-block;
-  padding: 5px 20px;
-  margin-bottom: 0;
-  font-size: 3rem;
-  letter-spacing: 1px;
-  text-transform: lowercase;
-  color: #FFF;
-}
-
-.contact-title span {
-  margin: 0 30px;
-  color: #cfa75c;
-  font-size: 3.5rem;
-}
-
 .contact .linear-border {
   height: 2px;
   margin: 0 auto;
@@ -1477,14 +1415,5 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
   .contact button {
     min-width: 150px;
   }
-}
-
-body {
-  background-color: #000;
-  font-family: 'Raleway', sans-serif;
-}
-
-.disable {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */

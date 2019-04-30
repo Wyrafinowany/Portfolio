@@ -7,22 +7,6 @@
     background-attachment: fixed;
     background-size: cover;
 
-    &-title {
-        display: inline-block;
-        padding: 5px 20px;
-        margin-bottom: 0;
-        font-size: 3rem;
-        letter-spacing: 1px;
-        text-transform: lowercase;
-        color: #FFF;
-
-        span {
-            margin: 0 30px;
-            color: #cfa75c;
-            font-size: 3.5rem;
-        }
-    }
-
     .linear-border {
         height: 2px;
         margin: 0 auto;
@@ -116,7 +100,7 @@
                         background-color: rgba(253, 203, 110, 0.4);
                         margin-bottom: 10px;
                         padding: 5px 10px;
-                        border-radius: 3px;
+                        border-radius: 0px;
                         color: #000;
 
                         &:focus {

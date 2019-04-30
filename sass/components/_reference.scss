@@ -4,22 +4,6 @@
     background-color: #171717;
     box-shadow: 0px 0px 50px 5px rgba(253, 203, 110, 0.5);
 
-    &-title {
-        display: inline-block;
-        padding: 5px 20px;
-        margin-bottom: 0;
-        font-size: 3rem;
-        letter-spacing: 1px;
-        text-transform: lowercase;
-        color: #FFF;
-
-        span {
-            margin: 0 30px;
-            color: #cfa75c;
-            font-size: 3.5rem;
-        }
-    }
-
     .linear-border {
         height: 2px;
         margin: 0 auto;

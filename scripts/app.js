@@ -1,21 +1,16 @@
 // Preloader
 const preloader = document.getElementById('loading-page');
-const activePage = document.querySelector('.disable');
 
 window.addEventListener('load', function () {
-  setTimeout(function () {
+  preloader.style.display = 'none';
 
-    preloader.style.display = 'none';
-    activePage.classList.remove('disable');
-
-    // Navigation ScrollReveal
-    sr.reveal('nav .navbar-list', {
-      distance: '30px',
-      easing: 'ease-out',
-      delay: '300',
-      origin: 'top'
-    });
-  }, 0)
+  // Navigation ScrollReveal
+  sr.reveal('nav .navbar-list', {
+    distance: '30px',
+    easing: 'ease-out',
+    delay: '300',
+    origin: 'top'
+  });
 });
 
 // =================================== //
@@ -36,12 +31,14 @@ window.addEventListener('scroll', (e) => {
 });
 
 //     *~* Hamburger menu *~*
+
 //Disable menu after click on <a>
 $('.toggle-menu a').on('click', function (e) {
   $('.toggle').toggleClass('toggle-active');
   $('.navicon').toggleClass('navicon-active');
 
 });
+
 //Active/disable hamburger menu
 $('.navicon').on('click', function (e) {
   e.preventDefault();

@@ -1,0 +1,24 @@
+body {
+    background-color: #000;
+    font-family: 'Raleway', sans-serif;
+}
+
+// Title section
+.about-title,
+.projects-title,
+.reference-title,
+.contact-title {
+    display: inline-block;
+    padding: 5px 20px;
+    margin-bottom: 0;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    color: #FFF;
+
+    span {
+        margin: 0 30px;
+        color: #cfa75c;
+        font-size: 3.5rem;
+    }
+}

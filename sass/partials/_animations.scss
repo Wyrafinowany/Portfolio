@@ -1,0 +1,57 @@
+// Preloader
+.loading-container {
+
+    .let1 {
+        animation: drop 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    .let2 {
+        animation: drop 2s ease-in-out infinite;
+        animation-delay: 2.1s;
+    }
+
+    .let3 {
+        animation: drop 2s ease-in-out infinite;
+        animation-delay: 2.2s;
+    }
+
+    .let4 {
+        animation: drop 2s ease-in-out infinite;
+        animation-delay: 2.3s;
+    }
+
+    .let5 {
+        animation: drop 2s ease-in-out infinite;
+        animation-delay: 2.4s;
+    }
+
+    .let6 {
+        animation: drop 2s ease-in-out infinite;
+        animation-delay: 2.5s;
+    }
+
+    .let7 {
+        animation: drop 2s ease-in-out infinite;
+        animation-delay: 2.6s;
+    }
+}
+
+
+@keyframes drop {
+    10% {
+        opacity: 0.5;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

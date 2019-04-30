@@ -1,6 +1,10 @@
-@import "variables";
+// Partials
+@import "partials/global";
+@import "partials/variables";
+@import "partials/animations";
+@import "partials/normalize";
 
-@import "./normalize";
+// Components
 @import "components/pre-loader";
 @import "components/navigation";
 @import "components/header";
@@ -8,12 +12,3 @@
 @import "components/projects";
 @import "components/reference";
 @import "components/contact";
-
-body {
-  background-color: #000;
-  font-family: 'Raleway', sans-serif;
-}
-
-.disable {
-  display: none;
-}
