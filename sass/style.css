@@ -1049,8 +1049,8 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
 @media (max-width: 992px) {
   .projects {
     padding: 3% 5%;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7))), url("../images/background-projects_mobile.jpg");
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7)), url("../images/background-projects_mobile.jpg");
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.85))), url("../images/background-projects_mobile.jpg");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.85)), url("../images/background-projects_mobile.jpg");
     background-size: 100% 100%;
   }
   .projects-title {
