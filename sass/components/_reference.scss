@@ -1,15 +1,8 @@
 .reference {
     text-align: center;
     padding: 3% 0;
-    background-color: #171717;
-    box-shadow: 0px 0px 50px 5px rgba(253, 203, 110, 0.5);
-
-    .linear-border {
-        height: 2px;
-        margin: 0 auto;
-        max-width: 50vw;
-        background: linear-gradient(to right, rgba(23, 23, 23, 0) 10%, rgba(253, 203, 110, 1) 50%, rgba(23, 23, 23, 0) 90%);
-    }
+    background-color: $background;
+    box-shadow: $main-shadow;
 
     .icons-row {
         display: flex;
@@ -19,13 +12,12 @@
 
         .box {
             .iconbase {
+                @include size(150px, 150px);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 150px;
-                height: 150px;
                 border-radius: 50%;
-                background-color: white;
+                background-color: #FFF;
                 animation: initialrotate 300ms ease-in-out 1 forwards;
 
                 &:hover {
@@ -39,62 +31,32 @@
 
             .icon-title {
                 margin-top: 12%;
-                color: #FDCB6E;
+                color: $secondary-color;
             }
 
             .rect {
+                @include size(150px, 70px);
+
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 150px;
-                height: 70px;
-                background-color: #171717;
+                background-color: $background;
             }
 
             .icon {
+                @include size(140px, 140px);
+
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 140px;
-                height: 140px;
                 border-radius: 50%;
                 text-decoration: none;
-                background-color: #171717;
+                background-color: $background;
                 font-size: 4rem;
 
                 a {
                     opacity: 0.8;
-                    color: #FDCB6E;
-                }
-            }
-
-            @keyframes initialrotate {
-                0% {
-                    transform: rotate(90deg);
-                }
-
-                100% {
-                    transform: rotate(0deg);
-                }
-            }
-
-            @keyframes rotate {
-                0% {
-                    transform: rotate(0deg);
-                }
-
-                100% {
-                    transform: rotate(90deg);
-                }
-            }
-
-            @keyframes antirotate {
-                0% {
-                    transform: rotate(0deg);
-                }
-
-                100% {
-                    transform: rotate(-90deg);
+                    color: $secondary-color;
                 }
             }
         }

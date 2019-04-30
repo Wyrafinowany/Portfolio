@@ -86,19 +86,18 @@ sr.reveal('.about p', {
 }, 75);
 
 // Section projects
-const revealChildren = sr.reveal('.information-title, .information p, .information .buttons', {
+sr.reveal('.project-box', {
+  distance: '20px',
+  easing: 'ease-out',
+  viewFactor: '0.3',
+}, 150);
+
+sr.reveal('.information-title, .information p, .information .buttons', {
   duration: 500,
   distance: '20px',
   easing: 'ease-out',
   viewFactor: 1,
 }, 75);
-
-sr.reveal('.project-box', {
-  distance: '20px',
-  easing: 'ease-out',
-  viewFactor: '0.3',
-  afterReveal: revealChildren,
-}, 150);
 
 // Section reference
 const revealChildrenIcon = sr.reveal('.reference .icon-title', {

@@ -1,0 +1,20 @@
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin spacing($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin properties-background($background-postion, $background-attachment, $background-size) {
+    background-position: $background-postion;
+    background-attachment: $background-attachment;
+    background-size: $background-size;
+}
+
+@mixin animation-image($animation-duration, $animation-delay) {
+    animation-duration: $animation-duration;
+    animation-delay: $animation-delay;
+}

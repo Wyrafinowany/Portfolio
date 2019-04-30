@@ -1,23 +1,15 @@
 .projects {
     padding: 3% 0;
     text-align: center;
-    box-shadow: 0px 0px 50px 5px rgba(253, 203, 110, 0.5);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/background-projects.jpg');
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+    box-shadow: $main-shadow;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7)), url('https://cdn.pixabay.com/photo/2018/02/16/10/52/beverage-3157395_960_720.jpg');
 
-    .linear-border {
-        height: 2px;
-        margin: 0 auto;
-        max-width: 50vw;
-        background: linear-gradient(to right, rgba(23, 23, 23, 0) 10%, rgba(253, 203, 110, 1) 50%, rgba(23, 23, 23, 0) 90%);
-    }
+    @include properties-background(center, fixed, cover);
 
     &-container {
+        @include spacing(3% auto, 3% 2%);
+
         max-width: 60vw;
-        margin: 3% auto;
-        padding: 3% 2%;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.3);
         box-shadow: 0 8px 60px 0 #161616;
@@ -26,7 +18,6 @@
     &-row {
         display: flex;
         justify-content: space-around;
-        // margin-bottom: 4%;
 
         .project-box {
             margin-bottom: 4%;
@@ -42,38 +33,39 @@
             }
 
             [data-image="shop"] {
+                @include animation-image(50s, 5s);
+
                 background-image: url('../images/projects/shop.png');
-                animation-duration: 50s;
-                animation-delay: 5s;
             }
 
             [data-image="sudoku"] {
+                @include animation-image(10s, 9s);
+
                 background-image: url('../images/projects/sudoku.png');
-                animation-duration: 10s;
-                animation-delay: 9s;
             }
 
             [data-image="awax"] {
+                @include animation-image(100s, 0s);
+
                 background-image: url('../images/projects/awax.png');
-                animation-duration: 100s;
             }
 
             [data-image="country-app"] {
+                @include animation-image(20s, 8s);
+
                 background-image: url('../images/projects/CountryApp.png');
-                animation-duration: 20s;
-                animation-delay: 8s;
             }
 
             [data-image="kanban"] {
+                @include animation-image(30s, 7s);
+
                 background-image: url('../images/projects/kanban.png');
-                animation-duration: 30s;
-                animation-delay: 7s;
             }
 
             [data-image="group-project"] {
+                @include animation-image(80s, 2s);
+
                 background-image: url('../images/projects/group-project.png');
-                animation-duration: 80s;
-                animation-delay: 2s;
             }
 
             .information {
@@ -81,15 +73,16 @@
 
                 &-title {
                     margin: 5% 0;
-                    color: #FDCB6E;
+                    color: $secondary-color;
                 }
 
                 .description {
                     max-width: 300px;
                     min-height: 90px;
                     padding: 10px 15px;
+                    font-family: 'Roboto', sans-serif;
                     letter-spacing: 1px;
-                    color: #FFF;
+                    color: $light-color;
                 }
 
                 .buttons {
@@ -171,27 +164,5 @@
                 }
             }
         }
-    }
-}
-
-@keyframes moving {
-    0% {
-        background-position: 0 0;
-    }
-
-    10% {
-        background-position: 0 0;
-    }
-
-    45% {
-        background-position: 0 100%;
-    }
-
-    55% {
-        background-position: 0 100%;
-    }
-
-    100% {
-        background-position: 0 0;
     }
 }

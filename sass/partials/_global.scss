@@ -22,3 +22,11 @@ body {
         font-size: 3.5rem;
     }
 }
+
+// Linear border 
+.linear-border {
+    height: 2px;
+    margin: 0 auto;
+    max-width: 50vw;
+    background: linear-gradient(to right, rgba(23, 23, 23, 0) 10%, rgba(253, 203, 110, 1) 50%, rgba(23, 23, 23, 0) 90%);
+}

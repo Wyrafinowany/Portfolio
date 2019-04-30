@@ -1,15 +1,8 @@
 .about {
     padding: 3% 0;
     text-align: center;
-    background-color: #171717;
-    box-shadow: 0px 0px 50px 5px rgba(253, 203, 110, 0.5);
-
-    .linear-border {
-        height: 2px;
-        margin: 0 auto;
-        max-width: 50vw;
-        background: linear-gradient(to right, rgba(23, 23, 23, 0) 10%, rgba(253, 203, 110, 1) 50%, rgba(23, 23, 23, 0) 90%);
-    }
+    background-color: $background;
+    box-shadow: $main-shadow;
 
     &-row {
         display: flex;
@@ -21,8 +14,8 @@
             margin: 2%;
 
             .photo {
-                width: 100%;
-                height: auto;
+                @include size(100%, auto);
+
                 border-image: url(../images/border.svg) 50 50;
                 border-style: inset;
                 border-width: 5px;
@@ -40,11 +33,11 @@
                 font-family: 'Roboto', sans-serif;
                 line-height: 2rem;
                 letter-spacing: 2px;
-                color: #FFF;
+                color: $light-color;
 
                 &::first-letter {
                     font-size: 2rem;
-                    color: #cfa75c;
+                    color: $primary-color;
                 }
             }
         }

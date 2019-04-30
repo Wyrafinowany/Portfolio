@@ -55,3 +55,57 @@
         opacity: 0;
     }
 }
+
+// Projects
+@keyframes moving {
+    0% {
+        background-position: 0 0;
+    }
+
+    10% {
+        background-position: 0 0;
+    }
+
+    45% {
+        background-position: 0 100%;
+    }
+
+    55% {
+        background-position: 0 100%;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+// Reference 
+@keyframes initialrotate {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes antirotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}
