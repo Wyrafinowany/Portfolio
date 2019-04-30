@@ -100,19 +100,18 @@ sr.reveal('.information-title, .information p, .information .buttons', {
 }, 75);
 
 // Section reference
-const revealChildrenIcon = sr.reveal('.reference .icon-title', {
-  duration: 500,
-  distance: '20px',
-  easing: 'ease-out',
-  viewFactor: 1,
-});
-
 sr.reveal('.reference .iconbase', {
   duration: 700,
   distance: '20px',
   easing: 'ease-out',
   viewFactor: 1,
-  afterReveal: revealChildrenIcon,
+});
+
+sr.reveal('.reference .icon-title', {
+  duration: 500,
+  distance: '20px',
+  easing: 'ease-out',
+  viewFactor: 1,
 });
 
 // Section contact
