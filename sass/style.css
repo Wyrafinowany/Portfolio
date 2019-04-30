@@ -911,6 +911,7 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
 }
 
 .projects {
+  margin: 0;
   padding: 3% 0;
   text-align: center;
   -webkit-box-shadow: 0px 0px 50px 5px rgba(253, 203, 110, 0.5);
@@ -1047,9 +1048,6 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
 }
 
 @media (max-width: 992px) {
-  .projects {
-    padding: 3% 5%;
-  }
   .projects-title {
     display: -webkit-box;
     display: -ms-flexbox;
