@@ -915,8 +915,8 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
   text-align: center;
   -webkit-box-shadow: 0px 0px 50px 5px rgba(253, 203, 110, 0.5);
           box-shadow: 0px 0px 50px 5px rgba(253, 203, 110, 0.5);
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7))), url("https://cdn.pixabay.com/photo/2018/02/16/10/52/beverage-3157395_960_720.jpg");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7)), url("https://cdn.pixabay.com/photo/2018/02/16/10/52/beverage-3157395_960_720.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7))), url("../images/background-projects.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7)), url("../images/background-projects.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -1048,9 +1048,10 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
 
 @media (max-width: 992px) {
   .projects {
-    width: 100%;
-    height: 100%;
     padding: 3% 5%;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7))), url("../images/background-projects_mobile.jpg");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7)), url("../images/background-projects_mobile.jpg");
+    background-size: 100% 100%;
   }
   .projects-title {
     display: -webkit-box;
