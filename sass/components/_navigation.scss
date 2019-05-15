@@ -107,7 +107,7 @@ nav {
 
             //Active hamburger icon "X"
             &-active {
-                margin-bottom: 12%;
+                // margin-bottom: 12%;
                 transition: linear 0.5s all;
 
                 &:before,
@@ -130,14 +130,14 @@ nav {
         .toggle {
             display: block;
             min-width: 100vw;
-            padding: 10%;
+            padding: 0% 10%;
             opacity: 0;
             background-color: rgba(23, 23, 23, 0.9);
             transition: ease-in 0.5s all;
             transform: translateY(-200%);
 
             &-active {
-                margin-top: 25px;
+                // margin-top: 25px;
                 opacity: 1;
                 transition: ease-in 0.5s all;
                 transform: translateY(0);

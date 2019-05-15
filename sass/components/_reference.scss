@@ -24,8 +24,13 @@
                     animation: rotate 300ms ease-in-out 1 forwards;
 
                     .icon {
-                        animation: antirotate 300ms ease-in-out 1 forwards;
+                        animation: antirotate_first 300ms ease-in-out 1 forwards;
                     }
+                }
+
+                .icon {
+                    animation: antirotate_second 300ms ease-in-out 1 forwards;
+
                 }
             }
 

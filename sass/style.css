@@ -192,7 +192,7 @@ body {
   }
 }
 
-@-webkit-keyframes antirotate {
+@-webkit-keyframes antirotate_first {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -203,7 +203,7 @@ body {
   }
 }
 
-@keyframes antirotate {
+@keyframes antirotate_first {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -211,6 +211,28 @@ body {
   100% {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+  }
+}
+
+@-webkit-keyframes antirotate_second {
+  0% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes antirotate_second {
+  0% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
@@ -690,7 +712,6 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
     top: 28px;
   }
   .hamburger-menu .navicon-active {
-    margin-bottom: 12%;
     -webkit-transition: linear 0.5s all;
     transition: linear 0.5s all;
   }
@@ -711,7 +732,7 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
   .hamburger-menu .toggle {
     display: block;
     min-width: 100vw;
-    padding: 10%;
+    padding: 0% 10%;
     opacity: 0;
     background-color: rgba(23, 23, 23, 0.9);
     -webkit-transition: ease-in 0.5s all;
@@ -720,7 +741,6 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
             transform: translateY(-200%);
   }
   .hamburger-menu .toggle-active {
-    margin-top: 25px;
     opacity: 1;
     -webkit-transition: ease-in 0.5s all;
     transition: ease-in 0.5s all;
@@ -1139,8 +1159,13 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
 }
 
 .reference .icons-row .box .iconbase:hover .icon {
-  -webkit-animation: antirotate 300ms ease-in-out 1 forwards;
-          animation: antirotate 300ms ease-in-out 1 forwards;
+  -webkit-animation: antirotate_first 300ms ease-in-out 1 forwards;
+          animation: antirotate_first 300ms ease-in-out 1 forwards;
+}
+
+.reference .icons-row .box .iconbase .icon {
+  -webkit-animation: antirotate_second 300ms ease-in-out 1 forwards;
+          animation: antirotate_second 300ms ease-in-out 1 forwards;
 }
 
 .reference .icons-row .box .icon-title {
