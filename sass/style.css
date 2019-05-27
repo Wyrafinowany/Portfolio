@@ -942,7 +942,7 @@ nav .container .navbar-list .navbar-link:hover::before, nav .container .navbar-l
 .projects-container {
   margin: 3% auto;
   padding: 3% 2%;
-  max-width: 70vw;
+  max-width: 85vw;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 8px 60px 0 #161616;
